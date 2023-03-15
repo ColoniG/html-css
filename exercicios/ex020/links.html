@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Links</title>
+
+    <style>
+                /*     SELETORES PERSONALIZADOS
+                    #   = id
+                    .   = class
+                    :   = pseudo-class
+                    ::  = pesudo-element
+                    >   = children
+                */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;            
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+            text-decoration: none;
+        }
+        
+        .especial{
+            background-color: rgba(173, 255, 173, 0.664);
+        }
+
+        .especial::before{
+            content:' 👉 ';
+        }
+
+        .especial::after{   
+            content:' 👈';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://github.com/ColoniG" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/colonig" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" class="especial">Site do CursoemVideo</a></li>
+        <li><a href="https://www.msn.com/pt-br/noticias/brasil/n%C3%A3o-h%C3%A1-como-contestar-pais-de-madeleine-mccann-aceitam-realizar-exame-de-dna-em-jovem-que-afirma-ser-a-menina-desaparecida/ar-AA17KZxb?ocid=msedgdhp&pc=U531&cvid=1a74d3f22c65492d8d9c9bdc5d98e62d target="_blank"">Matéria de Mad</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* em HTML é id = em CSS é #
+   em HTML é class = em CSS é ponto 
+
+   OBS.: dentro do mesmo documento HTML só pode ter um  elemento com ID (segundo regra do W3C)
+        para vários elemenstos tenho que usar classe
+        ID = único
+        CLASS = pode ser multiplo
+   */
+
+body{
+    background-color: rgb(187, 255, 223);
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    font-size: 1em;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(7, 156, 27);
+    color: white;
+}
+
+h1{
+    color: rgb(7, 156, 27);
+}
+
+h2{
+    color: rgb(0, 214, 29);
+}
+
+p{
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.basico{
+    color: rgb(7, 156, 27);
+}
+
+.intermediario{
+    color: rgb(156, 146, 7);
+}
+
+.avancado{
+    color: rgb(156, 7, 7);
+}
+
+.destaque{
+    background-color: rgba(255, 255, 103, 0.404);
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{
+            text-shadow: 1px 11px 5px rgba(0, 0, 0, 0.274);
+            
+        }
+
+        nav{
+            background-color: rgb(70, 70, 70);
+            padding: 3px;
+            font-weight: bold;
+            box-shadow: 6px 7px 7px 1px rgba(0, 0, 0, 0.418);
+        }
+
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: orangered;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+        }
+
+        div{
+            background-color: rgb(218, 218, 218); 
+            width:136px; 
+            height: 180px;;
+            padding: 2px; 
+            border: 2px solid black;
+            margin: 5px 0px;
+            display: inline-block;            
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(148, 148, 148);
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        #retangulo{
+            background-color: rgb(255, 255, 255);
+            margin: 10%;
+            
+            
+            height: 200px;
+            width: 300px;
+
+        }
+
+        #circulo{
+            background-color: red;
+                        
+            height: 120px;
+            width: 120px;
+
+            border-radius: 50%;
+
+            margin: 12% 28.7%;
+                        
+        }
+    </style>
+
+</head>
+<body>
+    <header>    
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>   
+    </header>
+    <main>
+        <section id="assuntos">
+            <div>
+                <h3>Esporte</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At vel quod reprehenderit.
+                </p>
+            </div>
+            <div>
+                <h3>Politica</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At vel quod reprehenderit.
+                </p>
+            </div>
+            <div>
+                <h3>Tecnologia</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At vel quod reprehenderit.
+                </p>
+            </div>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    At vel quod reprehenderit obcaecati. Aperiam autem 
+                    voluptatem molestiae fugit nam nulla eos! Cum ab explicabo 
+                    voluptatibus odio nemo repudiandae, itaque quasi!
+                    <aside>
+                        <p>Artigo escrito por Sebastião</p>
+                    </aside>
+                </p>
+            </article>
+            <article>
+                <h2>Notícias Internacionais</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    At vel quod reprehenderit obcaecati. Aperiam autem 
+                    voluptatem molestiae fugit nam nulla eos! Cum ab explicabo 
+                    voluptatibus odio nemo repudiandae, itaque quasi!
+                    <aside>
+                        <p>Artigo escrito por Fulanoviscky</p>
+                    </aside>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gilson Coloni Filho</p>
+    </footer>
+    <div id="retangulo">
+    <div id="circulo"></div>
+    </div>
+</body>
+</html>

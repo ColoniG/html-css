@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{   /* Configuração glbal no CSS */
+                height: 100%;
+            }
+
+        body {            
+           /* background-color: cornflowerblue;  //para fundo de cor única */
+
+           /* background-image: linear-gradient(90deg, white, blue); //em graus */
+
+           /* background-image: radial-gradient(circle, #3198E2 10%, #6D59C0,#B93590,#E33F5F,#FDD579);  
+           background-attachment: fixed; */
+
+           background-image: linear-gradient(to top, #3198E2 30%, #6D59C0,#B93590,#E33F5F,#FDD579);  /* to right, to left, to bottom e to top */
+           background-attachment: fixed; /* deixa o background fixo */           
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

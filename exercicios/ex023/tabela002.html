@@ -14,14 +14,26 @@
         table{
             width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        #col02{
+            width: 100px;
+        }
+        
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -30,6 +42,14 @@
         thead, tfoot{
             background-color: gray;
             color: white;        
+        }
+                                    /*posso usar even ou odd (par ou impar  -- ou  -- 2n, 3n... ou 2n - 1 (igual odd))*/
+        tbody > tr:nth-child(odd){
+            background-color: lightgoldenrodyellow;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightslategrey;
         }
 
         .num{
@@ -54,8 +74,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" id="col01">Estado</th>
+                <th scope="col" id="col02">População</th>
             </tr>
         </thead>
         <tbody>
@@ -171,10 +191,18 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><STRONG>207.883.699</STRONG></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae ut quod ab laborum, similique velit. Voluptates cumque dignissimos nobis optio dolorem amet repellendus totam quisquam. Molestiae ut at quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eaque assumenda officiis, tenetur neque, nam recusandae nisi quo, optio corrupti accusamus. Eos provident inventore impedit atque quos nam culpa saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia commodi nobis quidem omnis fuga nulla minus officiis, ut obcaecati natus voluptate itaque odit magnam repellat suscipit dolor aspernatur praesentium ipsa?</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae ut quod ab laborum, similique velit. Voluptates cumque dignissimos nobis optio dolorem amet repellendus totam quisquam. Molestiae ut at quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eaque assumenda officiis, tenetur neque, nam recusandae nisi quo, optio corrupti accusamus. Eos provident inventore impedit atque quos nam culpa saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia commodi nobis quidem omnis fuga nulla minus officiis, ut obcaecati natus voluptate itaque odit magnam repellat suscipit dolor aspernatur praesentium ipsa?</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae ut quod ab laborum, similique velit. Voluptates cumque dignissimos nobis optio dolorem amet repellendus totam quisquam. Molestiae ut at quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eaque assumenda officiis, tenetur neque, nam recusandae nisi quo, optio corrupti accusamus. Eos provident inventore impedit atque quos nam culpa saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia commodi nobis quidem omnis fuga nulla minus officiis, ut obcaecati natus voluptate itaque odit magnam repellat suscipit dolor aspernatur praesentium ipsa?</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae ut quod ab laborum, similique velit. Voluptates cumque dignissimos nobis optio dolorem amet repellendus totam quisquam. Molestiae ut at quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eaque assumenda officiis, tenetur neque, nam recusandae nisi quo, optio corrupti accusamus. Eos provident inventore impedit atque quos nam culpa saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia commodi nobis quidem omnis fuga nulla minus officiis, ut obcaecati natus voluptate itaque odit magnam repellat suscipit dolor aspernatur praesentium ipsa?</p> 
 </body>
 </html>

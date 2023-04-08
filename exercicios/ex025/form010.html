@@ -17,24 +17,31 @@
     <form action="http://127.0.0.1/cursophp/extra/cadastro.php" method="post" autocomplete="on">
         
         <p>
-            <label for="in1">Número 1: </label>
-            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <label for="iano">Em que ano você nasceu: </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" placeholder="1995"  oninput="idade.innerHTML = Number(new Date().getFullYear()) - Number(iano.value), calcIdade()">
         </p>
 
         <p>
-            <label for="in2">Número 2 </label>
-            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <label for="idade">Sua idade em 2023 é: </label>
+            <output id="idade">?</output>
         </p>
 
-        <p>
-            <label for="isoma">Soma: </label>
-            <output name="soma" id="isoma">?</output>
-        </p>
-        
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
+        <p>
+            <label for="ida">Sua idade em 2023 é: </label>
+            <output id="ida">?</output> (Aqui fiz atravez de função)
+        </p>
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear();
+            ida.innerHTML = Number(atual) - Number(iano.value);
+        }
+    </script>
 </body>
 </html>
